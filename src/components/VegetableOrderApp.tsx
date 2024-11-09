@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Plus, Copy } from "lucide-react";
 import { initialVegetables } from "@/vegetables";
+import { Vegetable } from "@/types/vegetable";
 
 const VegetableOrderApp = () => {
   const [vegetables, setVegetables] = useState<Vegetable[]>([]);
@@ -21,7 +22,7 @@ const VegetableOrderApp = () => {
 
   useEffect(() => {
     const savedVegetables = localStorage.getItem("vegetables");
-    const savedSelections = localStorage.getItem("selectedItems");
+    // const savedSelections = localStorage.getItem("selectedItems");
     const savedQuantities = localStorage.getItem("quantities");
     const savedOrderHistory = localStorage.getItem("orderHistory");
 

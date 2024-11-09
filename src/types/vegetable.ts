@@ -1,4 +1,4 @@
-interface Vegetable {
+export interface Vegetable {
     id: number;
     name: string;
     defaultQty: string;
